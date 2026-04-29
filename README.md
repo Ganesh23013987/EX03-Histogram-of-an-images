@@ -43,28 +43,28 @@ plt.title('Original Image')
 plt.show()
 
 ```
-<img width="650" height="650" alt="image" src="https://github.com/user-attachments/assets/1afd9591-7400-4647-931f-666e7f320d33" />
+<img width="450" height="450" alt="image" src="https://github.com/user-attachments/assets/1afd9591-7400-4647-931f-666e7f320d33" />
 
 ```
 plt.hist(img.ravel(),256,range = [0, 256]);
 plt.title('Original Image')
 plt.show()
 ```
-<img width="650" height="650" alt="image" src="https://github.com/user-attachments/assets/1429f354-1aed-440e-8230-febcaf09fed0" />
+<img width="450" height="450" alt="image" src="https://github.com/user-attachments/assets/1429f354-1aed-440e-8230-febcaf09fed0" />
 
 ```
 img_eq = cv2.equalizeHist(img)
 plt.hist(img_eq.ravel(), 256, range = [0, 256])
 plt.title('Equalized Histogram')
 ```
-<img width="650" height="650" alt="image" src="https://github.com/user-attachments/assets/e2855d97-29b2-4b1a-a7e3-9fd81d46937b" />
+<img width="450" height="450" alt="image" src="https://github.com/user-attachments/assets/e2855d97-29b2-4b1a-a7e3-9fd81d46937b" />
 
 ```
 plt.imshow(img_eq, cmap='gray')
 plt.title('Original Image')
 plt.show()
 ```
-<img width="650" height="650" alt="image" src="https://github.com/user-attachments/assets/71ad0ad1-7883-479c-9d77-bea5ddea4c16" />
+<img width="450" height="450" alt="image" src="https://github.com/user-attachments/assets/71ad0ad1-7883-479c-9d77-bea5ddea4c16" />
 
 ### 3.Histogram Equalization for Color Images
 ```
@@ -74,12 +74,12 @@ img_hsv[:,:,2] = cv2.equalizeHist(img_hsv[:, :, 2])
 img_eq = cv2.cvtColor(img_hsv, cv2.COLOR_HSV2BGR)
 plt.imshow(img_eq[:,:,::-1]); plt.title('Equalized Image');plt.show()
 ```
-<img width="650" height="650" alt="image" src="https://github.com/user-attachments/assets/60de07f0-8687-4eda-be71-6576fc37d4c3" />
+<img width="450" height="450" alt="image" src="https://github.com/user-attachments/assets/60de07f0-8687-4eda-be71-6576fc37d4c3" />
 
 ```
 plt.hist(img_eq.ravel(),256,range = [0, 256]); plt.title('Histogram Equalized');plt.show()
 ```
-<img width="650" height="650" alt="image" src="https://github.com/user-attachments/assets/56dac206-46a0-4628-8388-24aa1231260a" />
+<img width="450" height="450" alt="image" src="https://github.com/user-attachments/assets/56dac206-46a0-4628-8388-24aa1231260a" />
 
 ```
 plt.figure(figsize = (20,10))
